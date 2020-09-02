@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="welcome.css">
+        <script src="welcome.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <h1>Welcome to Nano's Roleplay World</h1>
+
+            <form autocomplete="off">
+                <div class="line">
+                    <h2>Name</h2>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="line">
+                    <h2>Surname</h2>
+                    <input type="text" id="surname" required>
+                </div>
+
+                <div class="line">
+                    <h2>Gender</h2>
+                    <div id="gender">
+                        <input type="button" id="female" value="Female" onclick="make_female()">
+                        <input type="button" id="male" value="Male" onclick="make_male()">
+                    </div>
+                </div>
+
+                <p id="err"></p>
+                <input type="button" id="start" value="Start my new life" onclick="validate()">
+            </form>
+        </div>
+    </body>
+</html>
