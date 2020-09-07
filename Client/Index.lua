@@ -12,6 +12,7 @@ end )
 NanosWorld:on( "SpawnLocalPlayer", function( ply )
     local welcome = WebUI( "Welcome", "file:///html/menus/welcome.html" )
     Client:SetMouseEnabled( true )
+    welcome:SetFocus()
 
     welcome:on( "Validated", function( name, surname, gender )
         welcome:Destroy()
